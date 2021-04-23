@@ -1,0 +1,85 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0-beta.2",
+    "id": "LandCoverChangeScotland_20192020.TIF",
+    "properties": {
+        "proj:epsg": 27700,
+        "gsd": 20.0,
+        "datetime": "2021-04-23T00:00:00Z"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -9.230506752839396,
+                    60.86542012340489
+                ],
+                [
+                    -9.230506752839396,
+                    54.51332770842268
+                ],
+                [
+                    -0.7070440614736996,
+                    54.51332770842268
+                ],
+                [
+                    -0.7070440614736996,
+                    60.86542012340489
+                ],
+                [
+                    -9.230506752839396,
+                    60.86542012340489
+                ]
+            ]
+        ]
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "collection",
+            "href": "../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../collection.json",
+            "type": "application/json"
+        }
+    ],
+    "assets": {
+        "asset": {
+            "href": "https://storage.googleapis.com/stac-si/LandCoverChangeScotland_20192020.TIF"
+        },
+        "LandCoverChangeScotland_20192020.TIF": {
+            "href": "https://storage.googleapis.com/stac-si/LandCoverChangeScotland_20192020.TIF",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "eo:bands": [
+                {
+                    "name": "LandCoverChangeScotland_20192020",
+                    "common_name": "LandCoverChangeScotland_20192020"
+                }
+            ],
+            "gsd": 20.0
+        },
+        "thumbnail": {
+            "href": "https://storage.googleapis.com/stac-si/LandCoverChangeScotland_20192020.JPEG",
+            "type": "image/jpeg"
+        }
+    },
+    "bbox": [
+        -9.230506752839396,
+        54.51332770842268,
+        -0.7070440614736996,
+        60.86542012340489
+    ],
+    "stac_extensions": [
+        "eo",
+        "projection"
+    ],
+    "collection": "stac-si"
+}

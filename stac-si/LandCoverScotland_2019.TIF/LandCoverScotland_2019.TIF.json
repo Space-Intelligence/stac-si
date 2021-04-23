@@ -1,0 +1,85 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0-beta.2",
+    "id": "LandCoverScotland_2019.TIF",
+    "properties": {
+        "proj:epsg": 27700,
+        "gsd": 20.0,
+        "datetime": "2021-04-23T00:00:00Z"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -9.231273059508903,
+                    60.8655994785224
+                ],
+                [
+                    -9.231273059508903,
+                    54.513117888488374
+                ],
+                [
+                    -0.7066687529789436,
+                    54.513117888488374
+                ],
+                [
+                    -0.7066687529789436,
+                    60.8655994785224
+                ],
+                [
+                    -9.231273059508903,
+                    60.8655994785224
+                ]
+            ]
+        ]
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "collection",
+            "href": "../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../collection.json",
+            "type": "application/json"
+        }
+    ],
+    "assets": {
+        "asset": {
+            "href": "https://storage.googleapis.com/stac-si/LandCoverScotland_2019.TIF"
+        },
+        "LandCoverScotland_2019.TIF": {
+            "href": "https://storage.googleapis.com/stac-si/LandCoverScotland_2019.TIF",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "eo:bands": [
+                {
+                    "name": "LandCoverScotland_2019",
+                    "common_name": "LandCoverScotland_2019"
+                }
+            ],
+            "gsd": 20.0
+        },
+        "thumbnail": {
+            "href": "https://storage.googleapis.com/stac-si/LandCoverScotland_2019.JPEG",
+            "type": "image/jpeg"
+        }
+    },
+    "bbox": [
+        -9.231273059508903,
+        54.513117888488374,
+        -0.7066687529789436,
+        60.8655994785224
+    ],
+    "stac_extensions": [
+        "eo",
+        "projection"
+    ],
+    "collection": "stac-si"
+}

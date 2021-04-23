@@ -1,0 +1,93 @@
+{
+    "id": "stac-si",
+    "stac_version": "1.0.0-beta.2",
+    "description": "SpatioTemporal Asset Catalog is the collection of Space Intelligence assets, crawlable through standardized STAC APIs.",
+    "links": [
+        {
+            "rel": "root",
+            "href": "./collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./LandCoverScotland_2019.TIF/LandCoverScotland_2019.TIF.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./LandCoverScotland_2020.TIF/LandCoverScotland_2020.TIF.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./LandCoverChangeScotland_20192020.TIF/LandCoverChangeScotland_20192020.TIF.json",
+            "type": "application/json"
+        }
+    ],
+    "title": "Public STAC of Space Intelligence",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -9.231273059508903,
+                    54.513117888488374,
+                    -0.7066687529789436,
+                    60.8655994785224
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-04-23T00:00:00Z",
+                    "2021-04-23T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "producer"
+            ],
+            "url": "https://landsat.usgs.gov/"
+        },
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ],
+            "url": "https://sentinels.copernicus.eu/web/sentinel/home"
+        },
+        {
+            "name": "NASA",
+            "roles": [
+                "producer"
+            ],
+            "url": "https://gedi.umd.edu/"
+        },
+        {
+            "name": "JAXA",
+            "roles": [
+                "producer"
+            ],
+            "url": "https://www.eorc.jaxa.jp/ALOS/en/about/palsar.htm"
+        },
+        {
+            "name": "GCP",
+            "roles": [
+                "host"
+            ],
+            "url": "https://gee.stac.cloud/"
+        },
+        {
+            "name": "AWS",
+            "roles": [
+                "host"
+            ],
+            "url": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+        }
+    ]
+}
